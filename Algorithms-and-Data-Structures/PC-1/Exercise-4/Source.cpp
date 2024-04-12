@@ -16,7 +16,7 @@ void ingresarTransaccion(Lista<CCliente*>* lst) {
 	cout << "Ingresar numero de destino: ";
 	cin >> cliente->numeroDestino;
 	cout << "Ingresar monto: ";
-	cin >> cliente->numeroDestino;
+	cin >> cliente->monto;
 	lst->agregaInicial(cliente);
 	cout << endl << endl;
 }
@@ -34,7 +34,7 @@ void imprimir3MontosAltos(Lista<CCliente*>* lst) {
 	/*
 	CCliente** arrayCliente = new CCliente* [lst->longitud()];
 	
-	//Copiar los elementos de la lista a arrayAlumnos
+	
 	for (int i = 0; i < lst->longitud(); i++){
 		arrayCliente[i] = lst->obtenerPos(i);
 	}
@@ -61,9 +61,9 @@ void menu(Lista<CCliente*>* lst) {
 			mostrarCliente(lst);
 			break;
 		case 3:
+			imprimir3MontosAltos(lst);
 			break;
 		case 4:
-			imprimir3MontosAltos(lst);
 			cout << "Gracias por ingresar...";
 			exit(0);
 		default:
@@ -82,6 +82,7 @@ int main(){
 	menu(lst);
 
 	delete lst;
+	
 	cin.get();
 	cin.ignore();
 	return 0;
