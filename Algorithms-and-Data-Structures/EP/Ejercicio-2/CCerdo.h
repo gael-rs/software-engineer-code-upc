@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class CCerdo
+class CCRegistro
 {
 public:
 	string codigoCerdo;
@@ -12,12 +12,12 @@ public:
 	float peso; //Mejor float que double ya que ocupa menos memoria
 	float altura; //Mejor float que double ya que ocupa menos memoria
 	float temperatura; //Mejor float que double ya que ocupa menos memoria
-	CCerdo();
-	~CCerdo();
+	CCRegistro();
+	~CCRegistro();
 	string ToString();
 };
 
-CCerdo::CCerdo() {
+CCRegistro::CCRegistro() {
 	this->codigoCerdo = "";
 	this->edad = 0;
 	this->peso = 0.0;
@@ -25,7 +25,7 @@ CCerdo::CCerdo() {
 	this->temperatura = 0.0;
 }
 
-string CCerdo::ToString() {
+string CCRegistro::ToString() {
 	stringstream ss;
 	ss << "Codigo del cerdo: \t" << this->codigoCerdo << endl;
 	ss << "Edad del cerdo: \t" << this->edad << endl;
@@ -35,4 +35,4 @@ string CCerdo::ToString() {
 	return ss.str();
 }
 
-CCerdo::~CCerdo() {}
+CCRegistro::~CCRegistro() {}

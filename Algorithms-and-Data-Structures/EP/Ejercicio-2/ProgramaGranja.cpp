@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void generarDatosCerdos(Lista<CCerdo*>* lst) {
+void generarDatosCerdos(Lista<CCRegistro*>* lst) {
 	srand(time(nullptr)); // Semilla para el rand()
 
 	// Número de cerdos a generar (500 < n < 800)
@@ -21,7 +21,7 @@ void generarDatosCerdos(Lista<CCerdo*>* lst) {
 		float altura = static_cast<float>(rand() % 10000) / 100;        // Altura entre 0.00 y 99.99
 		float temperatura = static_cast<float>(rand() % 10000) / 100;   // Temperatura entre 0.00 y 99.99
 
-		CCerdo* cerdo = new CCerdo();
+		CCRegistro* cerdo = new CCRegistro();
 		cerdo->codigoCerdo = to_string(codigo);
 		cerdo->edad = edad;
 		cerdo->peso = peso;
@@ -32,13 +32,13 @@ void generarDatosCerdos(Lista<CCerdo*>* lst) {
 	}
 }
 
-void mostrarDatosCerdos(Lista<CCerdo*>* lst) {
+void mostrarDatosCerdos(Lista<CCRegistro*>* lst) {
 	cout << "===========================" << endl;
 	cout << "    DATOS DE LOS CERDOS    " << endl;
 	cout << "===========================" << endl;
 
 	for (auto it = lst->begin(); it != lst->end(); ++it) {
-		CCerdo* cerdo = *it; 
+		CCRegistro* cerdo = *it; 
 
 		cout << "===========================" << endl;
 		cout << "Cerdo #" << cerdo->codigoCerdo << endl;
@@ -51,7 +51,7 @@ void mostrarDatosCerdos(Lista<CCerdo*>* lst) {
 
 	}
 }
-float promedioEdades(Lista<CCerdo*>* lst) {
+float promedioEdades(Lista<CCRegistro*>* lst) {
 	if (lst->esVacia()) return 0;
 
 	float suma = 0;
@@ -65,7 +65,7 @@ float promedioEdades(Lista<CCerdo*>* lst) {
 	return suma / cantidad;
 }
 
-float promedioPesos(Lista<CCerdo*>* lst) {
+float promedioPesos(Lista<CCRegistro*>* lst) {
 	if (lst->esVacia()) return 0;
 
 	float suma = 0;
@@ -79,7 +79,7 @@ float promedioPesos(Lista<CCerdo*>* lst) {
 	return suma / cantidad;
 }
 
-float promedioAlturas(Lista<CCerdo*>* lst) {
+float promedioAlturas(Lista<CCRegistro*>* lst) {
 	if (lst->esVacia()) return 0; 
 
 	float suma = 0;
@@ -93,7 +93,7 @@ float promedioAlturas(Lista<CCerdo*>* lst) {
 	return suma / cantidad;
 }
 
-void mostrarEdades(Lista<CCerdo*>* lst) {
+void mostrarEdades(Lista<CCRegistro*>* lst) {
 	Cola<int> colaEdades;
 
 	for (auto it = lst->begin(); it != lst->end(); ++it) {
@@ -107,11 +107,11 @@ void mostrarEdades(Lista<CCerdo*>* lst) {
 	cout << endl;
 }
 
-void ordenarPorEdades(Lista<CCerdo*>* lst) {
+void ordenarPorEdades(Lista<CCRegistro*>* lst) {
 	if (lst->esVacia()) return;
 
 	int n = lst->longitud();
-	CCerdo** cerdos = new CCerdo * [n];
+	CCRegistro** cerdos = new CCRegistro * [n];
 
 	int i = 0;
 	for (auto it = lst->begin(); it != lst->end(); ++it) {
@@ -120,7 +120,7 @@ void ordenarPorEdades(Lista<CCerdo*>* lst) {
 
 	// Ordenar por edades
 	for (int i = 1; i < n; i++) {
-		CCerdo* aux = cerdos[i];
+		CCRegistro* aux = cerdos[i];
 		int k = i - 1;
 		while (k >= 0 && aux->edad < cerdos[k]->edad) {
 			cerdos[k + 1] = cerdos[k];
@@ -140,13 +140,13 @@ void ordenarPorEdades(Lista<CCerdo*>* lst) {
 	
 }
 
-void mostrarListaOrdenada(Lista<CCerdo*>* lst) {
+void mostrarListaOrdenada(Lista<CCRegistro*>* lst) {
 	cout << "=================================" << endl;
 	cout << "  DATOS DE LOS CERDOS ORDENADOS    " << endl;
 	cout << "=================================" << endl;
 
 	for (auto it = lst->begin(); it != lst->end(); ++it) {
-		CCerdo* cerdo = *it;
+		CCRegistro* cerdo = *it;
 
 		cout << "===========================" << endl;
 		cout << "Cerdo #" << cerdo->codigoCerdo << endl;
@@ -161,7 +161,7 @@ void mostrarListaOrdenada(Lista<CCerdo*>* lst) {
 
 
 
-void menu(Lista<CCerdo*>* lst) {
+void menu(Lista<CCRegistro*>* lst) {
 	int opcion;
 	do {
 		cout << "===========================" << endl;
@@ -215,7 +215,7 @@ void menu(Lista<CCerdo*>* lst) {
 
 int main() {
 
-	Lista<CCerdo*>* lst = new Lista<CCerdo*>(
+	Lista<CCRegistro*>* lst = new Lista<CCRegistro*>(
 		[](CCerdo* a1, CCerdo* a2) {
 			return a1->ToString().compare(a2->ToString());
 		});
