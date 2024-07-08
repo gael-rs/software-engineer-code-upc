@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{F71EE31F-6CA1-485B-B55F-0F1CE2B535C9}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>NightFarm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>NotSet</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>NotSet</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddStrategy.cpp" />
+    <ClCompile Include="Animal.cpp" />
+    <ClCompile Include="AnimateEntity.cpp" />
+    <ClCompile Include="Bat.cpp" />
+    <ClCompile Include="CustomButton.cpp" />
+    <ClCompile Include="Carrot.cpp" />
+    <ClCompile Include="CustomCombo.cpp" />
+    <ClCompile Include="CustomInput.cpp" />
+    <ClCompile Include="CustomUi.cpp" />
+    <ClCompile Include="Dog.cpp" />
+    <ClCompile Include="Exercise.cpp" />
+    <ClCompile Include="Farm.cpp" />
+    <ClCompile Include="Farmer.cpp" />
+    <ClCompile Include="Fence.cpp" />
+    <ClCompile Include="FlashLight.cpp" />
+    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="GameInitializer.cpp" />
+    <ClCompile Include="GameNightFarm.cpp" />
+    <ClCompile Include="GamePresenter.cpp" />
+    <ClCompile Include="Garden.cpp" />
+    <ClCompile Include="Harvest.cpp" />
+    <ClCompile Include="HUD.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="LevelController.cpp" />
+    <ClCompile Include="ListAnimals.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MathOperationStrategy.cpp" />
+    <ClCompile Include="Mole.cpp" />
+    <ClCompile Include="MultiplicationStrategy.cpp" />
+    <ClCompile Include="Plant.cpp" />
+    <ClCompile Include="PlatingPlace.cpp" />
+    <ClCompile Include="Pot.cpp" />
+    <ClCompile Include="PowerItem.cpp" />
+    <ClCompile Include="Pumpkin.cpp" />
+    <ClCompile Include="QuestionGenerator.cpp" />
+    <ClCompile Include="Rabbit.cpp" />
+    <ClCompile Include="Racoon.cpp" />
+    <ClCompile Include="BaseEntity.cpp" />
+    <ClCompile Include="Scarecrow.cpp" />
+    <ClCompile Include="Seed.cpp" />
+    <ClCompile Include="SellPlace.cpp" />
+    <ClCompile Include="Sequence.cpp" />
+    <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="ShopVegetable.cpp" />
+    <ClCompile Include="StaticEntity.cpp" />
+    <ClCompile Include="Statistics.cpp" />
+    <ClCompile Include="SubstractionStrategy.cpp" />
+    <ClCompile Include="Tomato.cpp" />
+    <ClCompile Include="Vegetable.cpp" />
+    <ClCompile Include="Wall.cpp" />
+    <ClCompile Include="Wheat.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\source\repos\trabajo-parcial-algoritmos\Exercise.h" />
+    <ClInclude Include="AddStrategy.h" />
+    <ClInclude Include="Animal.h" />
+    <ClInclude Include="AnimateEntity.h" />
+    <ClInclude Include="Bat.h" />
+    <ClInclude Include="CustomButton.h" />
+    <ClInclude Include="Carrot.h" />
+    <ClInclude Include="CustomCombo.h" />
+    <ClInclude Include="CustomInput.h" />
+    <ClInclude Include="CustomUi.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="Harvest.h" />
+    <ClInclude Include="Macros.h" />
+    <ClInclude Include="Dog.h" />
+    <ClInclude Include="Farm.h" />
+    <ClInclude Include="Farmer.h" />
+    <ClInclude Include="Fence.h" />
+    <ClInclude Include="FlashLight.h" />
+    <ClInclude Include="GameController.h" />
+    <ClInclude Include="GameInitializer.h" />
+    <ClInclude Include="GameNightFarm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GamePresenter.h" />
+    <ClInclude Include="Garden.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="HUD.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="LevelController.h" />
+    <ClInclude Include="ListAnimals.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="MathOperationStrategy.h" />
+    <ClInclude Include="Mole.h" />
+    <ClInclude Include="MultiplicationStrategy.h" />
+    <ClInclude Include="Plant.h" />
+    <ClInclude Include="PlatingPlace.h" />
+    <ClInclude Include="Pot.h" />
+    <ClInclude Include="PowerItem.h" />
+    <ClInclude Include="Pumpkin.h" />
+    <ClInclude Include="QuestionGenerator.h" />
+    <ClInclude Include="Rabbit.h" />
+    <ClInclude Include="Racoon.h" />
+    <ClInclude Include="BaseEntity.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Scarecrow.h" />
+    <ClInclude Include="Seed.h" />
+    <ClInclude Include="SellPlace.h" />
+    <ClInclude Include="Sequence.h" />
+    <ClInclude Include="Shop.h" />
+    <ClInclude Include="ShopVegetable.h" />
+    <ClInclude Include="StaticEntity.h" />
+    <ClInclude Include="Statistics.h" />
+    <ClInclude Include="SubstractionStrategy.h" />
+    <ClInclude Include="Tomato.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Vegetable.h" />
+    <ClInclude Include="Wall.h" />
+    <ClInclude Include="Wheat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\sounds\GAME+20.mp3" />
+    <Media Include="assets\sounds\MENU.mp3" />
+    <Media Include="assets\sounds\TARDE.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\sprites\background\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NightFarm.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GameNightFarm.resx">
+      <DependentUpon>GameNightFarm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnimateEntity" Collapsed="true">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAACAAAAIAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>AnimateEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Animal" Collapsed="true">
+    <Position X="1.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Animal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BaseEntity" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAgApAAEAkAAACQAQAQOAAACwAAgQAAkAABgQGAABAA=</HashCode>
+      <FileName>BaseEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bat" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carrot" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAggAAAAAAAA=</HashCode>
+      <FileName>Carrot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomButton" Collapsed="true">
+    <Position X="5.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAACIBAAAAAAAAAAABAAAAAJACAIAAAiAAAACQA=</HashCode>
+      <FileName>CustomButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomCombo" Collapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAABAAAAgAAAAAAAiAAAAAAAAAgAEAMEACAgAEAAA=</HashCode>
+      <FileName>CustomCombo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomInput" Collapsed="true">
+    <Position X="5.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgIAAAAAAAAAAAGAAAACACAAAAAAAAKAAAAAAigAAg=</HashCode>
+      <FileName>CustomInput.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomUi" Collapsed="true">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACACCACAACAIAAAAAABAAgAAAAAiQAAAAA=</HashCode>
+      <FileName>CustomUi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dog" Collapsed="true">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Dog.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Farm" Collapsed="true">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Farm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Farmer" Collapsed="true">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAACAAAAAAAAA=</HashCode>
+      <FileName>Farmer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Fence" Collapsed="true">
+    <Position X="1.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlashLight" Collapsed="true">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>FlashLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameController" Collapsed="true">
+    <Position X="21.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAEAAAAAgEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameInitializer" Collapsed="true">
+    <Position X="12" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAIAEAAAgAIAAAQAgAAAECABAAAAAEAIAAJEAAAAAA=</HashCode>
+      <FileName>GameInitializer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GamePresenter">
+    <Position X="1" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAUAIAIAogAAAEAIIiAKASIUABQMIRAgIAgBCAADQAg=</HashCode>
+      <FileName>GamePresenter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Garden" Collapsed="true">
+    <Position X="20" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Garden.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUD" Collapsed="true">
+    <Position X="18.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HUD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inventory" Collapsed="true">
+    <Position X="18.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Inventory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item" Collapsed="true">
+    <Position X="16.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelController" Collapsed="true">
+    <Position X="12" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAgAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>LevelController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListAnimals" Collapsed="true">
+    <Position X="9" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ListAnimals.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ListItems" Collapsed="true">
+    <Position X="0.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ListItems.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Map" Collapsed="true">
+    <Position X="3.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Map.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mole" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Mole.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plant" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Plant.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatingPlace" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>PlatingPlace.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pot" Collapsed="true">
+    <Position X="14.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Pot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerItem" Collapsed="true">
+    <Position X="16.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PowerItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pumpkin" Collapsed="true">
+    <Position X="7.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Pumpkin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rabbit" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rabbit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Racoon" Collapsed="true">
+    <Position X="14.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Racoon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scarecrow" Collapsed="true">
+    <Position X="16.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Scarecrow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Seed" Collapsed="true">
+    <Position X="14.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Seed.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SellPlace" Collapsed="true">
+    <Position X="16" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SellPlace.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sequence" Collapsed="true">
+    <Position X="1" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAQDBAAAIECAAACABgIAACAACgAAACCAAQAAWAEAA=</HashCode>
+      <FileName>Sequence.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shop" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StaticEntity" Collapsed="true">
+    <Position X="12.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>StaticEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Statistics" Collapsed="true">
+    <Position X="2.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Statistics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tomato" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAABAAAAAA=</HashCode>
+      <FileName>Tomato.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vegetable" Collapsed="true">
+    <Position X="9.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Vegetable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wheat" Collapsed="true">
+    <Position X="12.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAAA=</HashCode>
+      <FileName>Wheat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Position" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAGAAAAAAAAAAIBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sequence.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
