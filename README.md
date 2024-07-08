@@ -15,7 +15,9 @@
 📂 This repository is a collection of code developed during my courses at the university. It contains projects, exercises, and assignments completed week by week in my academic journey.
 
 📚 Below is a list of courses where the codes in this repository will be related:
-- Data Structures and Algorithms
+- Algorithms
+- Discrete Mathematics *(Proyect)*
+- Algorithms and Data Structures
 
 👍 I believe these resources will be beneficial for fellow students and software engineering enthusiasts who want to delve deeper into this exciting field! 
 
