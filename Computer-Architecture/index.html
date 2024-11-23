@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innox</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/Logo_white_sin.png">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#inicio">
+                    <img src="img/Logo_white_sin.png" alt="Logo Innox" class="logo">
+                </a>
+            </div>            
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#soluciones">Soluciones</a></li>
+                <li><a href="#testimonio">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="pages/login.html" class="btn-login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+        
+        <section class="hero" id="inicio">
+            <div class="logo-image">
+                <img src="img/INNOX_1_.png" alt="Logo Innox" class = "logo">
+            </div>
+            <div class="hero-content">
+                <h1>INNOX</h1>
+                <h2 class="hero-text">
+                    <strong>
+                        El <span class="futuro">futuro</span> de la <span class="agricultura">agricultura</span> en tus <span class="manos">manos</span>
+                    </strong>
+                </h2>
+
+                <p>Controla el clima de tu invernadero de manera precisa, eficiente y desde cualquier lugar.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">
+                        <img src="img/Android.png" alt="Android" class="icon">Descargar
+                    </a>
+                    <a href="#" class="btn">
+                        <img src="img/Apple.png" alt="Apple" class="icon">Descargar
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- Soluciones -->
+
+    <section class="soluciones" id="soluciones">
+        <div class="soluciones-container">
+            <div class="soluciones-header">
+                <p class="subtitulo">NUESTRAS SOLUCIONES</p>
+                <h2>Soluciones para optimizar tus cultivos</h2>
+                <p class="descripcion">En Innox, ofrecemos tecnologías avanzadas para transformar y modernizar la gestión de invernaderos.</p>
+            </div>
+            <div class="soluciones-items">
+                <div class="solucion-item">
+                    <img src="img/global-warming-svgrepo-com.svg" alt="Optimización de Clima">
+                    <h3>Optimización de Clima</h3>
+                    <p>Controla de forma precisa temperatura, humedad y luz en tus invernaderos.</p>
+                </div>
+                <div class="solucion-item">
+                    <img src="img/ecology-ecology-and-environment-svgrepo-com.svg" alt="Monitoreo Remoto">
+                    <h3>Monitoreo Remoto</h3>
+                    <p>Supervisa y administra tus cultivos desde cualquier lugar con nuestra app o página web.</p>
+                </div>
+                <div class="solucion-item">
+                    <img src="img/zoom-leaf-svgrepo-com.svg" alt="Análisis de Datos">
+                    <h3>Análisis de Datos</h3>
+                    <p>Obtén reportes detallados para tomar decisiones inteligentes basadas en datos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios-->
+    <section id = "testimonio" class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <div class="testimonio-img">
+                    <img src="img/testimonio_1.jpg" alt="Testimonio 1" class="testimonial-photo">
+                </div>
+                <p>"Innox ha cambiado por completo la manera en que gestiono mi invernadero. ¡Altamente recomendable!"</p>
+                <h3>Juan Pérez</h3>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-img">
+                    <img src="img/testimonio_2.jpg" alt="Testimonio 2" class="testimonial-photo">
+                </div>
+                <p>"Gracias a Innox, mis cultivos son más saludables y productivos. ¡Un gran avance en la productividad y eficiencia en la agricultura!"</p>
+                <h3>María López</h3>
+            </div>
+            <div class="testimonio">
+                <div class="testimonio-img">
+                    <img src="img/testimonio_3.jpg" alt="Testimonio 3" class="testimonial-photo">
+                </div>
+                <p>"El control del clima en mi invernadero es ahora mucho más fácil. Innox es una herramienta imprescindible."</p>
+                <h3>Carlos Ruiz</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <h2>Contacta con nosotros</h2>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
+        
+        <form class="contact-form">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Innox. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

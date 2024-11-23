@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+
+    background: url("Home.png") no-repeat center center/cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.form-container {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ff6600;
+}
+
+.form-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #555;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 1px solid #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+.links {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.links a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #cc5200;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    form {
+        gap: 20px;
+    }
+
+    .form-container h1 {
+        font-size: 2rem;
+    }
+}

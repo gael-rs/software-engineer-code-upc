@@ -1,0 +1,375 @@
+/* === ESTILOS GENERALES === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === NAVEGACIÓN === */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 555;
+    white-space: nowrap;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+nav .logo img {
+    width: 50px;
+}
+
+/* === HERO BANNER === */
+.hero-banner {
+    width: 100%;
+    height: 250px;
+    background: url("Home.png") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-banner img {
+    max-width: 100px;
+    z-index: 2;
+    position: relative;
+    margin-top: 100px;
+}
+
+/* === CONTROL DEL INVERNADERO === */
+.control-invernadero {
+    padding: 20px 100px;
+    margin: 70px auto 20px;
+    max-width: 1100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.control-invernadero h1 {
+    color: #ff6600;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+/* === CONTENEDOR DE BLOQUES === */
+.control-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.control-container > div {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 102, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.control-container > div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* === MAPA DEL INVERNADERO === */
+.mapa-invernadero {
+    text-align: center;
+}
+
+.mapa-invernadero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.mapa-zonas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.mapa-zonas .zona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 100px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.mapa-zonas .zona:hover {
+    background: #ffcc99;
+    transform: scale(1.05);
+}
+
+.mapa-zonas .zona-seleccionada {
+    background: #ff6600;
+    color: white;
+    border-color: #cc5200;
+}
+
+/* === CONTROL DE TEMPERATURA === */
+.temperatura-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperatura-control h2,
+.temperatura-control h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.temperatura-control .valor-temperatura {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 10px 0;
+}
+
+.temperatura-control .unidad-temperatura {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.temperatura-control .temperatura-editar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.temperatura-control .btn-temperatura {
+    background: #333333;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.temperatura-control .btn-temperatura:hover {
+    background: #1c1c1c;
+    transform: scale(1.1);
+}
+
+.temperatura-control p {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 15px 0;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.temperatura-control p span {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+.temperatura-control .temperatura-editar span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* === INFORMACIÓN DEL PRODUCTO === */
+.informacion-fija {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ff6600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.informacion-fija:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.informacion-fija h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+.informacion-fija p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.informacion-fija p strong {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.info-item .label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.info-item .value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff6600;
+    margin: 0;
+}
+
+/* === ELEMENTOS DESTACADOS === */
+.info-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ff6600;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-item span {
+    color: #ff6600;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    .control-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa-invernadero,
+    .temperatura-control,
+    .informacion-fija {
+        width: 100%;
+    }
+
+    .hero-banner {
+        height: 70px;
+    }
+}
+
+
+.reporte-monitoreo {
+    padding: 20px 100px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.reporte-monitoreo h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.graficas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}

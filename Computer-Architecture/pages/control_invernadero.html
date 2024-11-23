@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control del Invernadero</title>
+    <link rel="stylesheet" href="../css/invernadero.css">
+    <script defer src="../scripts/invernadero.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../img/Logo_white_sin.png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#configuracion">Configuración de Invernadero</a></li>
+                <li><a href="#reporte">Reporte de Monitoreo</a></li>
+                <li><a href="#cuenta">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <img src="../img/INNOX_1_.png" alt="Logo del Proyecto">
+    </div>
+
+    <!-- Sección de Control del Invernadero -->
+    <main>
+        <section class="control-invernadero" id="configuracion">
+            <h1>Control del Invernadero</h1>
+            <div class="control-container">
+                <!-- Mapa del Invernadero -->
+                <div class="mapa-invernadero">
+                    <h2>Mapa del Invernadero</h2>
+                    <div class="mapa-zonas">
+                        <button class="zona" data-zona="A">Área A</button>
+                        <button class="zona" data-zona="B">Área B</button>
+                        <button class="zona" data-zona="C">Área C</button>
+                        <button class="zona" data-zona="D">Área D</button>
+                        <button class="zona" data-zona="E">Área E</button>
+                        <button class="zona" data-zona="F">Área F</button>
+                        <button class="zona" data-zona="G">Área G</button>
+                        <button class="zona" data-zona="H">Área H</button>
+                    </div>
+                </div>
+
+                <!-- Bloque Central -->
+                <div class="temperatura-control">
+                    <h2>Temperatura Actual</h2>
+                    <span id="temp-actual" class="valor-temperatura">--°C</span>
+                    <h3>Unidad de Temperatura</h3>
+                    <div class="unidad-temperatura">
+                        <label>
+                            <input type="radio" name="unidad" value="celsius" checked>C°
+                        </label>
+                        <label>
+                            <input type="radio" name="unidad" value="fahrenheit">F°
+                        </label>
+                    </div>
+                    <h3>Editar Temperatura</h3>
+                    <div class="temperatura-editar">
+                        <button class="btn-temperatura" id="temp-down">⬇</button>
+                        <span id="editable-temp">--°C</span>
+                        <button class="btn-temperatura" id="temp-up">⬆</button>
+                    </div>
+                    <p>Temperatura mínima: <span id="temp-min">--°C</span>, Temperatura máxima: <span id="temp-max">--°C</span></p>
+                </div>
+
+                <!-- Información Fija -->
+                <div class="informacion-fija">
+                    <h2>Información del Producto</h2>
+                    <div class="info-item">
+                        <p class="label">Producto</p>
+                        <p class="value" id="producto-nombre">Zanahorias</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="label">Temperatura Óptima</p>
+                        <p class="value" id="temp-optima">20°C</p>
+                    </div>
+                    <div class="info-item">
+                        <p class="label">Humedad Relativa</p>
+                        <p class="value" id="humedad">50%</p>
+                    </div>
+                </div>                
+                              
+            </div>
+        </section>
+
+        <section class="reporte-monitoreo" id="reporte">
+            <h2>Reporte de Monitoreo</h2>
+            <div class="graficas">
+                <canvas id="graficaTemperatura"></canvas>
+                <canvas id="graficaHumedad"></canvas>
+            </div>
+        </section>
+        
+
+    </main>
+</body>
+</html>
