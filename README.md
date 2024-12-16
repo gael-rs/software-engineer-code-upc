@@ -18,6 +18,7 @@
 - Algorithms
 - Discrete Mathematics *(Proyect)*
 - Algorithms and Data Structures
+- Computer-Architecture *(Landing Page and Frontend Web Application)*
 
 👍 I believe these resources will be beneficial for fellow students and software engineering enthusiasts who want to delve deeper into this exciting field! 
 
